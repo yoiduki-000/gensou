@@ -1,5 +1,5 @@
-キャラクター→名前
-表紙→○○-cover
-横長イラスト→illust-
-縦長イラスト1キービジュアル→character-
-縦長イラスト2道具類→tateillust-
+キャラクター→a＋名前
+表紙→cover-○○
+横長イラスト→illust-01
+縦長イラスト1キービジュアル→character-01
+縦長イラスト2道具類→tateillust-01
