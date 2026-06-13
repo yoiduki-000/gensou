@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雪月の天蓋｜第一話</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>雪月の天蓋</h1>
+</header>
+
+<nav class="global-nav">
+  <a href="../../main.html">Home</a>
+  <a class="current" href="../../novel.html">Novel</a>
+  <a href="../../world.html">World</a>
+  <a href="../../Gallery.html">Gallery</a>
+</nav>
+
+<div class="reading-tools">
+  <button id="horizontalButton" class="active" type="button">横書き</button>
+  <button id="verticalButton" type="button">縦書き</button>
+</div>
+
+<main id="novelBody" class="novel-body">
+  <section class="chapter">
+    <h2>第一話</h2>
+    <p>タイトル</p>
+  </section>
+
+<p>本文
+　</p>
+
+  
+</main>
+
+<footer class="page-footer">
+  <a href="index.html">← 作品ページへ</a>
+  <a href="02.html">次の話 →</a>
+</footer>
+
+<script>
+const novelBody = document.getElementById("novelBody");
+const horizontalButton = document.getElementById("horizontalButton");
+const verticalButton = document.getElementById("verticalButton");
+
+horizontalButton.addEventListener("click", function(){
+  novelBody.classList.remove("vertical");
+  horizontalButton.classList.add("active");
+  verticalButton.classList.remove("active");
+});
+
+verticalButton.addEventListener("click", function(){
+  novelBody.classList.add("vertical");
+  verticalButton.classList.add("active");
+  horizontalButton.classList.remove("active");
+});
+</script>
+
+</body>
+</html>
